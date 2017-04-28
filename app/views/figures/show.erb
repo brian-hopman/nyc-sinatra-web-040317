@@ -1,0 +1,6 @@
+<h2><%= @figure.name %></h2>
+<% @figure.titles.each do |title| %>
+<ul><%= title.name%></ul>
+<% end %>
+
+<a href='/figures'>Back</a>

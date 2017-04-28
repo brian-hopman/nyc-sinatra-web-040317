@@ -1,0 +1,10 @@
+<form action='/figures' method='POST'>
+	<label>NAME: <input type='text' name='figure[name]'></lable>
+	<label><br>TITLE:<br>
+	<% @titles.each do |title| %>
+        <label><%= title.name %></label>
+        <input name="figure[title_ids][]" type='checkbox' value="<%= title.id%>"/></label><br>
+      <% end %>
+	</lable>
+	<input type='submit' value='MAKE HISTORY!'>
+</form>
