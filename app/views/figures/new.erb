@@ -5,6 +5,17 @@
         <label><%= title.name %></label>
         <input name="figure[title_ids][]" type='checkbox' value="<%= title.id%>"/></label><br>
       <% end %>
+				<input type="text" name="title[name]" placeholder="new title">
 	</lable>
+	<label><br>LANDMARK:<br>
+	<% @landmarks.each do |landmark| %>
+        <label><%= landmark.name %></label>
+        <input name="figure[landmark_ids][]" type='checkbox' value="<%= landmark.id%>"/></label><br>
+      <% end %>
+			<h5>Create New Landmark</h5>
+			<input type="text" name="landmark[name]" placeholder="name">
+			<input type="text" name="landmark[year_completed]" placeholder="Year Completed">
+	</lable>
+	<br>
 	<input type='submit' value='MAKE HISTORY!'>
 </form>
